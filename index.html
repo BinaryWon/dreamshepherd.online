@@ -44,25 +44,21 @@
 </head>
 <body class="min-h-screen gradient-bg">
     <header class="glass-effect shadow-sm sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex justify-between items-center">
             <h1 class="text-4xl font-bold text-gray-900">Dream Shepherd</h1>
-            <p class="mt-2 text-xl text-gray-600">睡不着的你来一起数羊羔，保证你睡得香</p>
+            <nav class="space-x-4">
+                <a href="#play-now" class="text-xl text-gray-900 hover:text-gray-600">立即玩</a>
+                <a href="#about-game" class="text-xl text-gray-900 hover:text-gray-600">关于游戏</a>
+                <a href="#game-features" class="text-xl text-gray-900 hover:text-gray-600">游戏特色</a>
+                <a href="#how-to-play" class="text-xl text-gray-900 hover:text-gray-600">游戏操作</a>
+            </nav>
         </div>
     </header>
 
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <section class="mb-12">
-            <h2 class="text-3xl font-semibold text-gray-900 mb-6">About the Game</h2>
-            <p class="text-lg text-gray-700 leading-relaxed">
-                该上床睡觉了……但是如何进入最深的睡眠呢？让我们数绵羊吧！<br>
-                嗯，这可能比最初想象的要困难得多……<br>
-                (It's time to go to bed... but how to enter the deepest sleep? Let's count sheep!<br>
-                Hmm, this might be much harder than originally imagined...)
-            </p>
-        </section>
-
-        <section class="mb-12">
-            <h2 class="text-3xl font-semibold text-gray-900 mb-6">Play Now</h2>
+        <!-- Play Now Section -->
+        <section id="play-now" class="mb-12">
+            <h2 class="text-3xl font-semibold text-gray-900 mb-6">立即玩</h2>
             <div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg glass-effect p-4 hover-scale">
                 <iframe 
                     src="https://html.itch.zone/html/13425827/index.html" 
@@ -75,8 +71,20 @@
             </div>
         </section>
 
-        <section class="mb-12">
-            <h2 class="text-3xl font-semibold text-gray-900 mb-6">Game Features</h2>
+        <!-- About the Game Section -->
+        <section id="about-game" class="mb-12">
+            <h2 class="text-3xl font-semibold text-gray-900 mb-6">关于游戏</h2>
+            <p class="text-lg text-gray-700 leading-relaxed">
+                该上床睡觉了……但是如何进入最深的睡眠呢？让我们数绵羊吧！<br>
+                嗯，这可能比最初想象的要困难得多……<br>
+                (It's time to go to bed... but how to enter the deepest sleep? Let's count sheep!<br>
+                Hmm, this might be much harder than originally imagined...)
+            </p>
+        </section>
+
+        <!-- Game Features Section -->
+        <section id="game-features" class="mb-12">
+            <h2 class="text-3xl font-semibold text-gray-900 mb-6">游戏特色</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <div class="glass-effect p-6 rounded-lg shadow-sm hover-scale">
                     <h3 class="text-xl font-semibold text-gray-900 mb-3">Hypnotic Music</h3>
@@ -93,8 +101,9 @@
             </div>
         </section>
 
-        <section class="mb-12">
-            <h2 class="text-3xl font-semibold text-gray-900 mb-6">How to Play</h2>
+        <!-- How to Play Section -->
+        <section id="how-to-play" class="mb-12">
+            <h2 class="text-3xl font-semibold text-gray-900 mb-6">游戏操作</h2>
             <div class="glass-effect p-6 rounded-lg shadow-sm">
                 <ol class="list-decimal list-inside space-y-4 text-gray-700">
                     <li>Left click = Purchase/Place (左键点击 = 购买/放置)</li>
@@ -118,5 +127,6 @@
     </footer>
 </body>
 </html>
+
 
 
