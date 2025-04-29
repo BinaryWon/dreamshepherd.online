@@ -1,98 +1,123 @@
-
-
-<头>
-    
-    
-    <title>梦中牧羊人 - 一个魔法拼图冒险</title>
-    <meta name="description" content="在《梦羊人》中踏上神秘的旅程，引导迷失的梦想回到它们应有的主人手中，这是一个充满奇迹和神秘的世界。">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Shepherd - A Magical Puzzle Adventure Game</title>
+    <meta name="description" content="Play Dream Shepherd, an enchanting puzzle game where you guide lost dreams through mystical landscapes. Experience beautiful visuals and challenging puzzles in this unique adventure.">
+    <meta name="keywords" content="dream shepherd, puzzle game, adventure game, online game, dream game">
+    <meta name="author" content="Dream Shepherd">
+    <meta property="og:title" content="Dream Shepherd - A Magical Puzzle Adventure">
+    <meta property="og:description" content="Guide lost dreams through mystical landscapes in this enchanting puzzle adventure.">
+    <meta property="og:image" content="https://dreamshepherd.online/images/og-image.jpg">
+    <meta property="og:url" content="https://dreamshepherd.online">
+    <meta name="twitter:card" content="summary_large_image">
     <link rel="canonical" href="https://dreamshepherd.online" />
-    
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        :root {
+            --primary-color: #0071e3;
+            --secondary-color: #1d1d1f;
+        }
         body {
-            字体：'Inter'，无衬线字体；
-            背景颜色: #f5f5f7;
+            font-family: 'Inter', sans-serif;
+            background-color: #f5f5f7;
+            color: var(--secondary-color);
         }
         .gradient-bg {
             background: linear-gradient(135deg, #f5f5f7 0%, #e5e5e7 100%);
         }
-    
-
-<body class="最小高度屏幕 gradient-bg">
-    <header class="bg-white/80 backdrop-blur-sm shadow-sm sticky top-0 z-50">
-        
-            梦羊倌
-            梦想找到回家的路
+        .hover-scale {
+            transition: transform 0.2s ease-in-out;
+        }
+        .hover-scale:hover {
+            transform: scale(1.02);
+        }
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+<body class="min-h-screen gradient-bg">
+    <header class="glass-effect shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+            <h1 class="text-4xl font-bold text-gray-900">Dream Shepherd</h1>
+            <p class="mt-2 text-xl text-gray-600">Where dreams find their way home</p>
         </div>
-    
+    </header>
 
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <section class="mb-12">
-            关于游戏
+            <h2 class="text-3xl font-semibold text-gray-900 mb-6">About the Game</h2>
             <p class="text-lg text-gray-700 leading-relaxed">
-                Dream Shepherd 是一款迷人的益智游戏，带你进入梦幻的神秘旅程。
-                作为梦想牧羊人，你的任务是将迷失的梦想引导回到它们的真正主人手中，解决复杂的
-                解开谜题，揭示梦的世界的秘密。凭借其迷人的视觉效果和沉浸式的游戏体验，
-                Dream Shepherd 提供了一种独特的体验，将挑战你的思维并温暖你的心。
+                Dream Shepherd is an enchanting puzzle game that takes you on a mystical journey through the realm of dreams. 
+                As the Dream Shepherd, your mission is to guide lost dreams back to their rightful owners, solving intricate 
+                puzzles and uncovering the secrets of the dream world. With its captivating visuals and immersive gameplay, 
+                Dream Shepherd offers a unique experience that will challenge your mind and warm your heart.
             </p>
         </section>
 
         <section class="mb-12">
-            立即玩
-            
-                
-                    src="https://html.itch.zone/html/13425827/index.html"
+            <h2 class="text-3xl font-semibold text-gray-900 mb-6">Play Now</h2>
+            <div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg glass-effect p-4 hover-scale">
+                <iframe 
+                    src="https://html.itch.zone/html/13425827/index.html" 
                     class="w-full h-[600px]"
                     frameborder="0"
-                    允许全屏
-                    允许="自动播放; 全屏"
-                
+                    allowfullscreen
+                    allow="autoplay; fullscreen"
+                    title="Dream Shepherd Game"
+                ></iframe>
             </div>
         </section>
 
         <section class="mb-12">
-            游戏特色
-            
-                
-                    迷人的谜题
-                    解决精美绝伦的谜题，挑战你的思维，激发你的想象力。
+            <h2 class="text-3xl font-semibold text-gray-900 mb-6">Game Features</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="glass-effect p-6 rounded-lg shadow-sm hover-scale">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Enchanting Puzzles</h3>
+                    <p class="text-gray-600">Solve beautifully crafted puzzles that challenge your mind and spark your imagination.</p>
                 </div>
-                
-                    梦幻风景
-                    探索充满神奇生物和隐藏奇观的惊艳梦境。
+                <div class="glass-effect p-6 rounded-lg shadow-sm hover-scale">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Dreamy Landscapes</h3>
+                    <p class="text-gray-600">Explore stunning dreamscapes filled with magical creatures and hidden wonders.</p>
                 </div>
-                
-                    感人的故事
-                    <p class="text-gray-600">体验一个关于梦想、希望和找到回家之路的感人故事。</p>
+                <div class="glass-effect p-6 rounded-lg shadow-sm hover-scale">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Heartwarming Story</h3>
+                    <p class="text-gray-600">Experience a touching narrative about dreams, hope, and finding one's way home.</p>
                 </div>
             </div>
         </section>
 
         <section class="mb-12">
-            如何玩
-            
+            <h2 class="text-3xl font-semibold text-gray-900 mb-6">How to Play</h2>
+            <div class="glass-effect p-6 rounded-lg shadow-sm">
                 <ol class="list-decimal list-inside space-y-4 text-gray-700">
-                    使用箭头键或WASD键移动梦羊
-                    
-                    通过移动物体和创建路径来解决谜题
-                    收集特殊物品以解锁新能力
-                    完成关卡以推进梦境世界
+                    <li>Use arrow keys or WASD to move the Dream Shepherd</li>
+                    <li>Guide lost dreams to their matching dreamers</li>
+                    <li>Solve puzzles by moving objects and creating paths</li>
+                    <li>Collect special items to unlock new abilities</li>
+                    <li>Complete levels to progress through the dream world</li>
                 </ol>
             </div>
         </section>
-    
+    </main>
 
-    <footer class="bg-white/80 backdrop-blur-sm border-t mt-12">
-        
-            
-                © 2024 梦想牧羊人。版权所有。
-                
-                    隐私政策
-                    服务条款
-                    联系
-                </div>
+    <footer class="glass-effect border-t mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-500">&copy; 2024 Dream Shepherd. All rights reserved.</p>
+                <nav class="mt-4 md:mt-0 space-x-4" aria-label="Footer navigation">
+                    <a href="/privacy" class="text-gray-500 hover:text-gray-700">Privacy Policy</a>
+                    <a href="/terms" class="text-gray-500 hover:text-gray-700">Terms of Service</a>
+                    <a href="/contact" class="text-gray-500 hover:text-gray-700">Contact</a>
+                </nav>
             </div>
         </div>
-    
-
+    </footer>
+</body>
 </html>
